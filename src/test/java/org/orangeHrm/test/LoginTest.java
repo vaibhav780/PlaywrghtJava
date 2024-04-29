@@ -36,6 +36,7 @@ public class LoginTest {
 	@Test
 	public void LogoutTest() {
 		//loginPage.doLogin("admin","admin123");
+		assertEquals(dashboard.getpageheader(),"Dashboard");
 		dashboard.Logout();
 	}
 	
