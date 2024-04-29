@@ -30,13 +30,15 @@ public class LoginTest {
 	
 	@Test
 	public void LoginPageTest() {
-		AssertJUnit.assertEquals(loginPage.gettitle(),"OrangeHRM" );
+		assertEquals(loginPage.gettitle(),"OrangeHRM" );
+		System.out.println("Test Pass");
 		loginPage.doLogin("admin","admin123");
 	}
 	@Test
 	public void LogoutTest() {
 		//loginPage.doLogin("admin","admin123");
 		assertEquals(dashboard.getpageheader(),"Dashboard");
+		System.out.println("Test Pass");
 		dashboard.Logout();
 	}
 	
